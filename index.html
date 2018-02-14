@@ -1,0 +1,32 @@
+<!doctype html>
+<html ng-app="edeipCarousel" >
+
+<head>
+  <!-- adding  script files -->
+  <script src="./sourceWeb/angular.min.js"></script>
+  <script src="./sourceWeb/ui-bootstrap-tpls-0.6.0.js"> </script>
+  <script src="index.js"></script>
+
+  <!-- adding  css files -->
+  <link href="./sourceWeb/bootstrap-combined.min.css" rel="stylesheet">
+
+  <style type="text/css">
+	.carousel-control, .carousel-indicator {
+		visibility: hidden;
+	}
+  </style>
+
+</head>
+<body>
+<div class="container" ng-controller="CarouselCtrl">
+  <div >
+    <carousel interval="myInterval">
+      <slide ng-repeat="slide in slides" active="slide.active">
+        <img  ng-src="{{slide.image}}" style="margin:auto;width: 100%;"/>
+      </slide>
+    </carousel>
+  </div>
+</div>
+</body>
+
+</html>

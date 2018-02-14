@@ -1,0 +1,16 @@
+{
+  "name": "edeip-carousel",
+  "version": "1.0.0",
+  "description": "Carousel pour ecran accueil",
+  "main": "carousel.js",
+  "scripts": {
+    "setup": "npm install -g http-server",
+    "start": "http-server -a localhost -p 8080 -c-1 ./"
+  },
+  "keywords": [
+    "edeip",
+    "caroussel"
+  ],
+  "author": "Batoy",
+  "license": "ISC"
+}
