@@ -1,14 +1,14 @@
 {
-  "name": "edeip-carousel",
+  "name": "epsilan-carousel",
   "version": "1.0.0",
   "description": "Carousel pour ecran accueil",
-  "main": "carousel.js",
+  "main": "index.js",
   "scripts": {
     "setup": "npm install -g http-server",
     "start": "http-server -a localhost -p 8080 -c-1 ./"
   },
   "keywords": [
-    "edeip",
+    "epsilan",
     "caroussel"
   ],
   "author": "Batoy",
