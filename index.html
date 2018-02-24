@@ -14,15 +14,25 @@
 	.carousel-control, .carousel-indicator {
 		visibility: hidden;
 	}
+    .container {
+      margin: 0;
+      width: 100%;
+    }
+    .carousel {
+      margin: 0;
+    }
+    .body {
+      background-color: dimgrey;
+    }
   </style>
 
 </head>
 <body>
 <div class="container" ng-controller="CarouselCtrl">
-  <div >
+  <div>
     <carousel interval="myInterval">
       <slide ng-repeat="slide in slides" active="slide.active">
-        <img  ng-src="{{slide.image}}" style="margin:auto;width: 100%;"/>
+        <img  ng-src="{{slide.image}}" style="margin:0px;width: 1920px;"/>
       </slide>
     </carousel>
   </div>
